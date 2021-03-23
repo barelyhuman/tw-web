@@ -70,9 +70,9 @@ export default function Home() {
             </section>
             <section className="mt-2">
               <h3 id="pricing">Pricing</h3>
-              <div className="border br-1 p-1">
+              <div className="border br-1 p-2 w-50">
                 <h2 className="text-center">2$ - $$$</h2>
-                <p>
+                <p class="p-1">
                   We don't have any complex set of plans, you{' '}
                   <strong>pre-pay </strong>
                   for every month's worth of usage with whatever you wish to,

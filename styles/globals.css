@@ -168,6 +168,10 @@ input.large {
   text-align: center;
 }
 
+.w-33 {
+  width: 33%;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -189,14 +193,13 @@ input.large {
   flex-direction: column;
 }
 
-.align-center{
+.align-center {
   align-items: center;
 }
 
-.just-center{
+.just-center {
   justify-items: center;
 }
-
 
 .m-0 {
   margin: 0px;

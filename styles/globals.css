@@ -23,8 +23,8 @@ body {
 }
 
 body[data-dark-mode='dark'] {
-  --bg: #121212;
-  --bg-light: #191919;
+  --bg: #171717;
+  --bg-light: #222222;
   --bg-lighter: #252525;
   --fg: #d8dee9;
   --fg-light: #e5e9f0;
@@ -346,8 +346,8 @@ input.large {
 
 @media (prefers-color-scheme: dark) {
   body:not([data-dark-mode]) {
-    --bg: #121212;
-    --bg-light: #191919;
+    --bg: #171717;
+    --bg-light: #222222;
     --bg-lighter: #252525;
     --fg: #d8dee9;
     --fg-light: #e5e9f0;

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import feather from 'feather-icons'
 import Themer from '@barelyreaper/themer'
 
-export default function Header() {
+export default function Header({className}) {
   useEffect(() => {
     initThemer()
   }, [])
@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <>
-      <header>
+      <header className={className}>
         <div className="flex flex-center">
           <div>
             <h3>

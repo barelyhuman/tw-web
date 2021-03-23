@@ -27,7 +27,7 @@ export default function Home() {
           <article>
             <section className="text-center mb-2">
               <h1 className="f-large">Make Time Tracking a habit!</h1>
-              <a href="/login" className="button">
+              <a href="/login" className="button primary">
                 Get Started
               </a>
             </section>
@@ -71,12 +71,12 @@ export default function Home() {
             <section className="mt-2">
               <h3 id="pricing">Pricing</h3>
               <div className="border br-1 p-2 w-50">
-                <h2 className="text-center">2$ - $$$</h2>
+                <h2 className="text-center">$2 - $$$</h2>
                 <p class="p-1">
                   We don't have any complex set of plans, you{' '}
                   <strong>pre-pay </strong>
                   for every month's worth of usage with whatever you wish to,
-                  with the minimum payment being 2$
+                  with the minimum payment being $2
                 </p>
               </div>
             </section>

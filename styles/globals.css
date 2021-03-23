@@ -1,8 +1,8 @@
 /* Resets */
 
 :root {
-  --white: #fff;
-  --accent: #4064f2;
+  --white: #ededd7;
+  --accent: #00c3a9;
   --bg: #fff;
   --bg-light: #e5e9f0;
   --bg-lighter: #d8dee9;
@@ -10,6 +10,7 @@
   --fg-light: #3b4252;
   --fg-lighter: #434c5e;
   --shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 html,
@@ -37,7 +38,7 @@ body {
 }
 
 a {
-  color: #4064f2;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -72,8 +73,22 @@ button:hover {
   outline: #000;
   cursor: pointer;
   color: var(--bg);
-  background: var(--fg);
+  background-color: var(--fg);
   box-shadow: var(--shadow);
+}
+
+.button.primary,
+button.primary {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-large);
+}
+
+.button.primary:hover,
+button.primary:hover {
+  box-shadow: none;
+  color: var(--bg);
+  background-color: var(--accent);
 }
 
 input {
@@ -113,6 +128,18 @@ body[data-dark-mode='dark'] .button:hover,
 body[data-dark-mode='dark'] button:hover {
   background: var(--fg);
   color: var(--bg);
+}
+
+body[data-dark-mode='dark'] .button.primary,
+body[data-dark-mode='dark'] button.primary {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-large);
+}
+
+body[data-dark-mode='dark'] .button.primary:hover,
+body[data-dark-mode='dark'] button.primary:hover {
+  box-shadow: none;
+  background-color: var(--accent);
 }
 
 body[data-dark-mode='dark'] input {
@@ -328,13 +355,25 @@ input.large {
     --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
   }
 
-  .button:hover,
-  button:hover {
+  body:not([data-dark-mode]) .button:hover,
+  body:not([data-dark-mode]) button:hover {
     background: var(--fg);
     color: var(--bg);
   }
 
-  input {
+  body:not([data-dark-mode='dark']) .button.primary,
+  body:not([data-dark-mode='dark']) button.primary {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-large);
+  }
+
+  body:not([data-dark-mode='dark']) .button.primary:hover,
+  body:not([data-dark-mode='dark']) button.primary:hover {
+    box-shadow: none;
+    background-color: var(--accent);
+  }
+
+  body:not([data-dark-mode]) input {
     background: var(--bg-lighter);
     color: var(--fg);
   }

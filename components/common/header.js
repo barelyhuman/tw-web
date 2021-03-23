@@ -17,7 +17,7 @@ export default function Header() {
         <div className="flex flex-center">
           <div>
             <h3>
-              TillWhen
+              <a href="/">TillWhen</a>
               <br />
               <small className="fw-normal no-wrap">Just a Time Tracker</small>
             </h3>

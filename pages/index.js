@@ -1,3 +1,4 @@
+import Footer from '../components/common/footer';
 import Header from '../components/common/header';
 
 export default function Home() {
@@ -8,9 +9,6 @@ export default function Home() {
         <nav>
           <a href="/" className="mr-2">
             Home
-          </a>
-          <a href="/login" className="mr-2">
-            App
           </a>
           <a href="#about" className="mr-2">
             About
@@ -27,9 +25,11 @@ export default function Home() {
         </nav>
         <main>
           <article>
-            <section class="text-center mb-2">
-              <h1 class="f-large">Make Time Tracking a habit!</h1>
-              <button>Get Started</button>
+            <section className="text-center mb-2">
+              <h1 className="f-large">Make Time Tracking a habit!</h1>
+              <a href="/login" className="button">
+                Get Started
+              </a>
             </section>
             <hr />
             <section className="mt-2">
@@ -90,6 +90,7 @@ export default function Home() {
             </section>
           </article>
         </main>
+        <Footer />
       </section>
     </>
   );

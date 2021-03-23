@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "fix": "prettier --write . || echo 'done' "
   },
   "dependencies": {
     "@barelyreaper/themer": "^0.1.3",
@@ -15,9 +16,15 @@
     "react-dom": "17.0.2",
     "react-feather": "^2.0.9"
   },
+  "lint-staged": {
+    "*.{js,css,md,css}": "npm run fix"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.8",
-    "tailwindcss": "^2.0.4"
+    "lint-staged": ">=10",
+    "prettier": "^2.2.1",
+    "simple-git-hooks": ">=2.0.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 }

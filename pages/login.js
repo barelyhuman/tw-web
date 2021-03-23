@@ -1,25 +1,25 @@
-import { useState } from 'react';
-import Footer from '../components/common/footer';
-import Header from '../components/common/header';
-import { Loader } from 'react-feather';
+import { useState } from 'react'
+import Footer from '../components/common/footer'
+import Header from '../components/common/header'
+import { Loader } from 'react-feather'
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [mailSent, setMailSent] = useState(false);
+  const [email, setEmail] = useState('')
+  const [mailSent, setMailSent] = useState(false)
 
   const handleNext = () => {
     if (!email.length) {
-      return;
+      return
     }
-    setMailSent(true);
+    setMailSent(true)
     const handler = setTimeout(() => {
-      setMailSent(false);
-    }, 10000);
+      setMailSent(false)
+    }, 10000)
 
     return () => {
-      clearTimeout(handler);
-    };
-  };
+      clearTimeout(handler)
+    }
+  }
 
   return (
     <>
@@ -70,5 +70,5 @@ export default function LoginPage() {
         <Footer />
       </section>
     </>
-  );
+  )
 }

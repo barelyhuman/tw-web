@@ -1,5 +1,5 @@
-import Footer from '../components/common/footer';
-import Header from '../components/common/header';
+import Footer from '../components/common/footer'
+import Header from '../components/common/header'
 
 export default function Home() {
   return (
@@ -93,5 +93,5 @@ export default function Home() {
         <Footer />
       </section>
     </>
-  );
+  )
 }

@@ -1,14 +1,14 @@
-import { useEffect } from 'react';
-import feather from 'feather-icons';
-import Themer from '@barelyreaper/themer';
+import { useEffect } from 'react'
+import feather from 'feather-icons'
+import Themer from '@barelyreaper/themer'
 
 export default function Header() {
   useEffect(() => {
-    initThemer();
-  }, []);
+    initThemer()
+  }, [])
 
   function initThemer() {
-    new Themer({ trigger: document.getElementById('darkModeToggle') });
+    new Themer({ trigger: document.getElementById('darkModeToggle') })
   }
 
   return (
@@ -28,5 +28,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }
